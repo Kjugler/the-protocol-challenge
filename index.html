@@ -41,26 +41,38 @@
       line-height: 1.6;
     }
 
-    .ribbon {
+    .ticker-wrapper {
       width: 100%;
+      overflow: hidden;
       background-color: red;
-      color: white;
-      padding: 10px;
-      font-weight: bold;
-      text-align: center;
       position: fixed;
       top: 0;
-      left: 0;
-      z-index: 999;
+      z-index: 1000;
+    }
+
+    .ticker {
+      display: inline-block;
+      padding-left: 100%;
+      animation: ticker 20s linear infinite;
+      color: white;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
     }
 
     .spacer {
-      height: 60px;
+      height: 50px;
     }
   </style>
 </head>
 <body>
-  <div class="ribbon">The Agnes Protocol tops the banned book list – again. Find out why.</div>
+  <div class="ticker-wrapper">
+    <div class="ticker">Agnes Protocol tops banned book list — again. ⚡ Tiana M. just earned 3,450 points. ⚡ Nate R. entered the contest from Tucson. ⚡ Contest prize: 6-day all-inclusive cruise – still up for grabs. ⚡ #WhereIsJodyVernon ⚡</div>
+  </div>
   <div class="spacer"></div>
 
   <div class="container">
@@ -71,6 +83,9 @@
     This is the book Meta doesn’t want you to read. A fictional thriller that hits too close to home.</p>
     <p>Watch the video above to hear from the actress who plays Helen Agnes—one of the most terrifying characters in fiction. Then, dive into the story that’s rattling the gates of power.</p>
   </div>
+</body>
+</html>
+
 </body>
 </html>
 
