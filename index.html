@@ -2,94 +2,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>The Protocol Challenge</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Agnes Protocol Challenge</title>
   <style>
     body {
-      background-color: black;
-      color: #00FFCC;
-      font-family: 'Courier New', Courier, monospace;
-      text-align: center;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    h1 {
-      margin-top: 40px;
-      font-size: 1.8em;
-    }
-
-    .glitch-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 30px;
-      border: 2px solid #00FFCC;
-      color: #00FFCC;
-      font-size: 1.2em;
-      background: black;
-      text-decoration: none;
-      position: relative;
-      overflow: hidden;
-      animation: glitch 1s infinite;
-    }
-
-    @keyframes glitch {
-      0% { transform: translate(0); }
-      20% { transform: translate(-1px, 1px); }
-      40% { transform: translate(-1px, -1px); }
-      60% { transform: translate(1px, 1px); }
-      80% { transform: translate(1px, -1px); }
-      100% { transform: translate(0); }
+    .container {
+      max-width: 900px;
+      padding: 20px;
+      text-align: center;
     }
 
     iframe {
-      margin-top: 40px;
-      width: 560px;
-      height: 315px;
-      border: none;
-    }
-
-    .ticker {
-      position: fixed;
-      bottom: 0;
       width: 100%;
-      background: black;
-      color: limegreen;
-      font-size: 0.9em;
-      white-space: nowrap;
-      overflow: hidden;
-      box-shadow: 0 -2px 10px rgba(0,255,0,0.2);
+      height: 506px;
+      max-width: 900px;
+      border: none;
+      margin-bottom: 30px;
     }
 
-    .ticker span {
-      display: inline-block;
-      padding-left: 100%;
-      animation: scroll-left 20s linear infinite;
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #00ffcc;
     }
 
-    @keyframes scroll-left {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .ribbon {
+      width: 100%;
+      background-color: red;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+
+    .spacer {
+      height: 60px;
     }
   </style>
 </head>
 <body>
-  <h1>
-    Begin the Protocol Challenge –<br>
-    6 Days. 5 Nights. All-Inclusive Family Cruise!
-  </h1>
+  <div class="ribbon">The Agnes Protocol tops the banned book list – again. Find out why.</div>
+  <div class="spacer"></div>
 
-  <a class="glitch-button" href="https://kjugler.github.io/contest-landing-page/">ENTER CONTEST</a>
-
-  <div>
-    <iframe src="https://www.youtube.com/embed/zGPTbaX5jME?autoplay=1&mute=1&controls=1&loop=1&playlist=zGPTbaX5jME" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
-
-  <div class="ticker">
-    <span>
-      🔥 Latest Entries: Sarah T. | David M. | A. Rodriguez |
-      ⚠️ Headlines: "Meta flags satire as threat" • "Censorship crackdown escalates" • #WhereIsJodyVernon
-    </span>
+  <div class="container">
+    <h1>The Agnes Protocol</h1>
+    <iframe src="https://www.youtube.com/embed/Q8pVd_XhiTE?autoplay=1&mute=1&controls=1" 
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <p><strong>Controversial. Cinematic. Forbidden.</strong>  
+    This is the book Meta doesn’t want you to read. A fictional thriller that hits too close to home.</p>
+    <p>Watch the video above to hear from the actress who plays Helen Agnes—one of the most terrifying characters in fiction. Then, dive into the story that’s rattling the gates of power.</p>
   </div>
 </body>
 </html>
+
